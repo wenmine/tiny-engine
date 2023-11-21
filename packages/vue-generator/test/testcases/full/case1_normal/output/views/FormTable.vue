@@ -232,7 +232,7 @@ const state = vue.reactive({
     {
       title: '操作',
       slots: {
-        default: ({ row }, h) => (
+        default: ({ row }) => (
           <div
             style="color: rgb(94,124, 224);cursor:pointer;"
             text={t('operation.delete')}
