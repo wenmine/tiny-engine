@@ -355,7 +355,7 @@ const state = vue.reactive({
     {
       title: '操作',
       slots: {
-        default: ({ row }, h) => (
+        default: ({ row }) => (
           <TinyButton text="删除" icon={TinyIconDel} onClick={(...eventArgs) => emit(eventArgs, row)}></TinyButton>
         )
       }

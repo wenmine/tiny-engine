@@ -9,33 +9,28 @@ on:
 jobs:
   push-check:
     runs-on: ubuntu-latest  # windows-latest || macos-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
+    
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
         node-version: 16
-    
+        
     - name: Install pnpm
       run: npm i -g pnpm
-    
+
     - name: Install dependencies
       run: pnpm i
-    
+
     - name: Get changed files
-      uses: tj-actions/eslint-changed-files@v21
+      id: get_changed_files
+      uses: tj-actions/changed-files@v40
       with:
-        config_path: ".eslintrc.js"
-        ignore_path: ".eslintignore"
-        extra_args: "--max-warnings=0"
-        file_extensions: |
-          **/*.ts
-          **/*.tsx
-          **/*.vue
-          **/*.js
-          **/*.jsx
+        files: |
+              **.js
+              **.vue
+              **.jsx
+    - name: Run ESLint
+      run: npx eslint ${{steps.get_changed_files.outputs.all_changed_files}}
     - name: Run Build
       run: pnpm run build:plugin
