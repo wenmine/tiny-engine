@@ -199,7 +199,7 @@ const state = vue.reactive({
         ]
       },
       slots: {
-        default: ({ row }, h) => (
+        default: ({ row }) => (
           <div>
             <TinyIconEdit></TinyIconEdit>
             {props.isEdit && (
