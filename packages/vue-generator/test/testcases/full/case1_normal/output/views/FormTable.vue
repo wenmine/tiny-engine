@@ -335,7 +335,7 @@ const state = vue.reactive({
       field: 'employees',
       title: '员工数',
       slots: {
-        default: ({ row, rowIndex }, h) => <TinyInput></TinyInput>
+        default: () => <TinyInput></TinyInput>
       }
     },
     {

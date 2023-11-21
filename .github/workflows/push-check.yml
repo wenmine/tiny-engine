@@ -18,6 +18,13 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 16
+    
+    - name: Install pnpm
+      run: npm i -g pnpm
+    
+    - name: Install dependencies
+      run: pnpm i
+    
     - name: Get changed files
       uses: tj-actions/eslint-changed-files@v21
       with:
@@ -30,9 +37,5 @@ jobs:
           **/*.vue
           **/*.js
           **/*.jsx
-    - name: Install pnpm
-      run: npm i -g pnpm
-    - name: Install dependencies
-      run: pnpm i
     - name: Run Build
       run: pnpm run build:plugin
