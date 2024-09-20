@@ -442,7 +442,7 @@ export default {
     width: 492px;
     height: 100%;
     border-right: 1px solid var(--ti-lowcode-toolbar-border-color);
-    background: var(--ti-lowcode-common-component-bg);
+    background: var(--te-common-bg-default);
     position: absolute;
     left: var(--base-left-panel-width);
     top: 0;
@@ -456,7 +456,7 @@ export default {
       font-size: 12px;
       font-weight: 700;
       color: var(--ti-lowcode-data-source-color);
-      background: var(--ti-lowcode-common-component-bg);
+      background: var(--te-common-bg-default);
       border-bottom: 1px solid var(--ti-lowcode-data-header-border-bottom-color);
       .options-wrap {
         display: flex;

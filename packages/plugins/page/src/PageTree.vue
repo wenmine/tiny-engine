@@ -412,7 +412,7 @@ export default {
       justify-content: space-between;
       height: 24px;
       line-height: 24px;
-      color: var(--ti-lowcode-page-manage-tree-node-label-color);
+      color: var(--te-common-text-primary);
       .page-edit-icon {
         font-size: 16px;
       }

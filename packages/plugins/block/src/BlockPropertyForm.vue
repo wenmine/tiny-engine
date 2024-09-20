@@ -296,7 +296,7 @@ export default {
   width: 280px;
   height: 100%;
   padding: 20px;
-  background-color: var(--ti-lowcode-common-component-bg);
+  background-color: var(--te-common-bg-default);
   border-right: 1px solid var(--ti-lowcode-toolbar-border-color);
 }
 

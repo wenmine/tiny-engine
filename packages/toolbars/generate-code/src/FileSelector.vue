@@ -120,10 +120,10 @@ export default {
 <style lang="less" scoped>
 .dialog-box {
   :deep(.tiny-dialog-box__content) {
-    background-color: var(--ti-lowcode-common-component-bg);
+    background-color: var(--te-common-bg-default);
 
     .tiny-dialog-box__header {
-      background-color: var(--ti-lowcode-common-component-bg);
+      background-color: var(--te-common-bg-default);
 
       .tiny-dialog-box__title {
         color: var(--ti-lowcode-toolbar-breadcrumb-color);
@@ -170,7 +170,7 @@ export default {
           height: 30px;
 
           .tiny-grid-resizable.is__line:before {
-            background-color: var(--ti-lowcode-common-component-bg);
+            background-color: var(--te-common-bg-default);
           }
         }
 
@@ -205,7 +205,7 @@ export default {
         }
 
         .tiny-grid-body__row {
-          background-color: var(--ti-lowcode-common-component-bg);
+          background-color: var(--te-common-bg-default);
         }
 
         .tiny-grid-body__row,
