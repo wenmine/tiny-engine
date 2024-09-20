@@ -516,12 +516,12 @@ export default {
     font-size: 12px;
     text-align: left;
     padding: 0;
-    color: var(--ti-lowcode-base-text-color);
+    color: var(---te-base-text-color);
     svg {
       font-size: 16px;
     }
     .tiny-button.tiny-button--text {
-      color: var(--ti-lowcode-base-text-color);
+      color: var(--te-base-text-color);
     }
   }
 }

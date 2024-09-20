@@ -328,7 +328,7 @@ export default {
     color: var(--ti-lowcode-meta-code-editor-header-tips-container-color);
 
     .header-tips-title {
-      color: var(--ti-lowcode-base-text-color-3);
+      color: var(--te-base-text-color-3);
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -357,7 +357,7 @@ export default {
 
       code {
         font-family: Microsoft YaHei, Microsoft YaHei-Normal;
-        color: var(--ti-lowcode-base-text-color-3);
+        color: var(--te-base-text-color-3);
       }
     }
   }

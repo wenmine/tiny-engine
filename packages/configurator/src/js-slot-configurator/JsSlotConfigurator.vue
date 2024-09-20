@@ -234,11 +234,11 @@ export default {
   position: relative;
   width: 60px;
   height: 20px;
-  border: 1px solid var(--ti-lowcode-base-bg);
+  border: 1px solid var(--te-base-bg);
   outline: 0;
   border-radius: 10px;
   box-sizing: border-box;
-  background: var(--ti-lowcode-base-bg);
+  background: var(--te-base-bg);
   transition: border-color 0.3s, background-color 0.3s;
   vertical-align: middle;
 }
@@ -256,8 +256,8 @@ export default {
 }
 
 .e__switch.e_is-checked .e__switch-core {
-  border-color: var(--ti-lowcode-base-blue-6);
-  background-color: var(--ti-lowcode-base-blue-6);
+  border-color: var(--te-base-blue-6);
+  background-color: var(--te-base-blue-6);
 }
 
 .e__switch.e_is-checked .e__switch-core::after {
