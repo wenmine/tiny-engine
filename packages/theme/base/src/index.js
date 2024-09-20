@@ -19,3 +19,8 @@ export const tinyThemeDarkVars = {
   cnName: '',
   data: { ...tinyDarkTheme }
 }
+
+export const defaultThemeList = {
+  light: tinyThemeLightVars,
+  dark: tinyThemeDarkVars
+}

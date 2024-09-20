@@ -17,7 +17,8 @@ import { initMonitor } from '@opentiny/tiny-engine-common/js/monitor'
 import { injectGlobalComponents, setGlobalMonacoEditorTheme, Modal, Notify } from '@opentiny/tiny-engine-common'
 import { initHttp } from '@opentiny/tiny-engine-http'
 import TinyThemeTool from '@opentiny/vue-theme/theme-tool'
-import { tinyThemeLightVars } from '@opentiny/tiny-engine-theme-base'
+// import { tinyThemeLightVars } from '@opentiny/tiny-engine-theme-base'
+import { defaultThemeList } from '@opentiny/tiny-engine-theme-base'
 
 import {
   defineEntry,
@@ -52,8 +53,10 @@ const defaultLifeCycles = {
 
     initHttp({ env: import.meta.env })
 
+    const theme = newRegistry.config.theme || 'light'
+
     // eslint-disable-next-line no-new
-    new TinyThemeTool(tinyThemeLightVars, 'tinyThemeLightVars')
+    new TinyThemeTool(defaultThemeList[theme], defaultThemeList[theme]?.id)
 
     if (import.meta.env.VITE_ERROR_MONITOR === 'true' && import.meta.env.VITE_ERROR_MONITOR_URL) {
       initMonitor(import.meta.env.VITE_ERROR_MONITOR_URL)
@@ -67,8 +70,10 @@ const defaultLifeCycles = {
     window.lowcodeI18n = i18n
     app.use(i18n).use(injectGlobalComponents)
 
-    const theme = getMergeMeta('engine.config').theme?.includes('dark') ? 'vs-dark' : 'vs'
-    setGlobalMonacoEditorTheme(theme)
+    const theme = getMergeMeta('engine.config').theme
+    const monacoTheme = getMergeMeta('engine.config').theme?.includes('dark') ? 'vs-dark' : 'vs'
+    setGlobalMonacoEditorTheme(monacoTheme)
+    document?.documentElement?.setAttribute && document?.documentElement?.setAttribute('data-theme', theme)
   }
 }
 
