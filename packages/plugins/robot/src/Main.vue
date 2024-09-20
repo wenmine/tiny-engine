@@ -402,7 +402,7 @@ export default {
   z-index: 5;
   right: 40px;
   bottom: 40px;
-  background-color: var(--ti-lowcode-common-component-bg);
+  background-color: var(--te-common-bg-default);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
   border: 1px solid #dbdbdb;
   padding: 10px 20px 30px;

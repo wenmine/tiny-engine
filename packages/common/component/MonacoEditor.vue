@@ -139,7 +139,7 @@ export default {
   right: var(--base-left-panel-width);
   z-index: 10;
   padding: 10px 16px 16px 16px;
-  background-color: var(--ti-lowcode-common-component-bg);
+  background-color: var(--te-common-bg-default);
   height: auto !important;
 }
 

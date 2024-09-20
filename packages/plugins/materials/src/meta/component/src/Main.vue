@@ -140,7 +140,7 @@ export default {
       text-align: center;
       user-select: none;
       cursor: move;
-      background: var(--ti-lowcode-common-component-bg);
+      background: var(--te-common-bg-default);
 
       &:hover {
         background: var(--ti-lowcode-material-component-list-hover-bg);
