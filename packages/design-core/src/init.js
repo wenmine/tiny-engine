@@ -54,9 +54,9 @@ const defaultLifeCycles = {
     initHttp({ env: import.meta.env })
 
     const theme = newRegistry.config.theme || 'light'
-
     // eslint-disable-next-line no-new
     new TinyThemeTool(defaultThemeList[theme], defaultThemeList[theme]?.id)
+    document.documentElement?.setAttribute?.('data-theme', theme)
 
     if (import.meta.env.VITE_ERROR_MONITOR === 'true' && import.meta.env.VITE_ERROR_MONITOR_URL) {
       initMonitor(import.meta.env.VITE_ERROR_MONITOR_URL)
