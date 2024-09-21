@@ -127,7 +127,7 @@ export default {
       background: var(--ti-lowcode-datasource-respones-color-bg);
     }
     .requestBtn {
-      color: var(--ti-lowcode-datasource-respones-border-color-bg);
+      color: var(--te-common-text-dark-inverse);
     }
     :deep(.border-input) {
       input {

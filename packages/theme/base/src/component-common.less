@@ -133,12 +133,25 @@
     }
   }
   .tiny-collapse-item {
+    border-top-color: var(--te-common-border-bg-divider);
     border-bottom: 0px;
     margin: 0;
   }
   .tiny-collapse-item__content {
     border: 0px;
     padding: 12px;
+  }
+  .tiny-collapse-item,
+  .tiny-collapse-item__wrap {
+    background-color: var(--te-common-bg-default);
+  }
+
+  .tiny-collapse-item__content {
+    color: var(--te-common-text-primary);
+  }
+
+  .tiny-collapse-item__wrap {
+    overflow: inherit;
   }
 }
 

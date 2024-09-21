@@ -480,11 +480,6 @@ export default {
     float: none;
     display: flex;
     flex-wrap: wrap;
-    .tiny-tabs__item {
-      &.is-active {
-        background-color: var(--ti-lowcode-data-radio-group-active-bg);
-      }
-    }
   }
 
   :deep(.tiny-tabs__content) {
