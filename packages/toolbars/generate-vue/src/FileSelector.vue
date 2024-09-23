@@ -207,23 +207,6 @@ export default {
         .tiny-grid-body__row {
           background-color: var(--te-common-bg-default);
         }
-
-        .tiny-grid-body__row,
-        .tiny-grid-body__row:not(.row__hover):nth-child(2n) {
-          background-image: linear-gradient(
-            -180deg,
-            var(--ti-lowcode-new-table-row-sepline-background),
-            var(--ti-lowcode-new-table-row-sepline-background)
-          );
-          background-repeat: no-repeat;
-          background-size: 100% 1px;
-          background-position: 100% 100%;
-
-          &.row__current {
-            background-color: var(--ti-lowcode-toolbar-view-hover-bg);
-          }
-        }
-
         .tiny-grid-body__row {
           &.row__selected {
             .tiny-grid-checkbox__icon {
