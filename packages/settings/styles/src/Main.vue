@@ -236,15 +236,6 @@ export default {
         border-color: var(--ti-lowcode-setting-style-btn-border-color);
       }
     }
-    .inline-bind-style {
-      :deep(.tiny-input__inner) {
-        width: 216px;
-        pointer-events: none;
-        background: var(--ti-lowcode-setting-style-input-bg);
-        color: var(--ti-lowcode-setting-style-input-font-color);
-        border-color: var(--ti-lowcode-setting-style-input-bg);
-      }
-    }
   }
 }
 </style>

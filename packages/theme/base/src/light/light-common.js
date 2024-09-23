@@ -25,7 +25,7 @@ export const tinyLightTheme = {
   'ti-input-inner-border-hover-color': 'var(--ti-lowcode-common-border-color-15)',
   'ti-input-inner-border-focus-color': 'var(--ti-lowcode-common-border-color-15)',
   'ti-input-inner-font-size': 'var(--ti-lowcode-common-font-size-12)',
-  'ti-input-inner-disabled': 'var(--ti-lowcode-common-component-bg-5)',
+  'ti-input-inner-disabled': 'var(--te-base-gray-6)',
   'ti-input-inner-disabled-text': 'var(--ti-lowcode-common-secondary-text-color)',
   // collapse
   'ti-collapse-font-size': 'var(--ti-lowcode-common-font-size-12)',
@@ -104,7 +104,7 @@ export const tinyLightTheme = {
   'ti-numeric-border-radius': 'var(--ti-lowcode-common-radius-4)',
   'ti-numeric-input-font-color': 'var(--ti-lowcode-common-primary-text-color)',
   'ti-numeric-input-border-color': 'var(--ti-lowcode-common-border-color-8)',
-  'ti-numeric-base-disabled-bg-color': 'var(--ti-lowcode-common-component-bg-5)',
+  'ti-numeric-base-disabled-bg-color': 'var(--te-base-gray-6)',
   'ti-numeric-input-disabled-font-color': 'var(--ti-lowcode-common-secondary-text-color)',
   'ti-numeric-input-bg-color': 'var(--te-common-bg-default)',
   'ti-numeric-unit-font-color': 'var(--ti-lowcode-common-text-color-5)',
@@ -116,13 +116,13 @@ export const tinyLightTheme = {
   'ti-tag-font-color': 'var(--ti-lowcode-common-text-color-6)',
   'ti-tag-font-size': 'var(--ti-lowcode-common-font-size-12)',
   'ti-tag-border-radius': 'var(--ti-lowcode-common-radius-4)',
-  'ti-tag-bg-color': 'var(--ti-lowcode-common-component-bg-5)',
+  'ti-tag-bg-color': 'var(--te-base-gray-6)',
   'ti-tag-close-color': 'var(--ti-lowcode-common-text-color-5)',
   // radio
   'ti-radio-inner-border-color': 'var(--ti-lowcode-common-border-color-13)',
   'ti-radio-label-font-size': 'var(--ti-lowcode-common-font-size-12)',
   'ti-radio-label-font-color': 'var(--ti-lowcode-common-primary-text-color)',
-  'ti-radio-input-checked-bg-color': 'var(--ti-lowcode-common-component-bg-9)',
+  'ti-radio-input-checked-bg-color': 'var(--te-base-blue-6)',
   // radio-group
   'ti-radio-group-btn-inner-border-color': 'var(--ti-lowcode-common-border-color-39)',
   'ti-radio-group-btn-inner-bg-color': 'var(--ti-lowcode-common-component-bg-79)',
@@ -130,7 +130,7 @@ export const tinyLightTheme = {
   'ti-radio-group-inner-font-color': 'var(--ti-lowcode-common-primary-text-color)',
   // checkbox
   'ti-checkbox-input-checked-border-color': 'var(--ti-lowcode-common-border-color-6)',
-  'ti-checkbox-input-checked-bg-color': 'var(--ti-lowcode-common-component-bg-9)',
+  'ti-checkbox-input-checked-bg-color': 'var(--te-base-blue-6)',
   'ti-checkbox-input-inner-border-radius': 'var(--ti-lowcode-common-radius-4)',
   'ti-checkbox-input-inner-border-color': 'var(--ti-lowcode-common-border-color-13)',
   'ti-checkbox-input-inner-label-color': 'var(--ti-lowcode-common-primary-text-color)',
@@ -177,7 +177,7 @@ export const tinyLightTheme = {
   'ti-progress-text-font-color': 'var(--ti-lowcode-common-primary-text-color)',
   // switch
   'ti-switch-bg-color': 'var(--ti-lowcode-common-component-bg-84)',
-  'ti-switch-checked-bg-color': 'var(--ti-lowcode-common-component-bg-9)',
+  'ti-switch-checked-bg-color': 'var(--te-base-blue-6)',
   'ti-switch-after-bg-color': 'var(--te-common-bg-default)',
   // dropdown
   'ti-dropdown-trigger-font-color': 'var(--ti-lowcode-common-text-color-35)',
