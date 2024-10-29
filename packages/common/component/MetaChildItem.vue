@@ -99,7 +99,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 34px); // 22为头部+底部的高度
+  height: calc(100% - 34px); // 34为头部+底部的高度
   overflow-y: auto;
 
   .meta-config-item {

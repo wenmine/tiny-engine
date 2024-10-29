@@ -7,7 +7,11 @@
       </div>
       <tiny-button v-else class="edit-btn" @click="open">
         <slot name="icon"></slot>
-        <svg-icon name="page-schema" v-if="buttonText === EDIT_CODE_TEXT" class="edit-btn-icon"></svg-icon>
+        <svg-icon
+          name="page-schema"
+          v-if="[buttonText[locale], buttonText].includes(EDIT_CODE_TEXT)"
+          class="edit-btn-icon"
+        ></svg-icon>
 
         {{ buttonLabel }}
       </tiny-button>
