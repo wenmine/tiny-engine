@@ -109,7 +109,7 @@
     color: var(--te-common-text-primary);
     font-weight: var(--te-base-font-weight-7);
     background-color: var(--te-common-bg-default);
-    padding: 0 8px 0 12px;
+    padding: 0 12px;
     border: 0px;
     border-bottom-style: none;
 
@@ -175,6 +175,11 @@
       .is-current:not(.show-checkbox) > .tiny-tree-node__content .tiny-tree-node__content-right {
         background-color: var(--te-common-bg-container);
       }
+    }
+  }
+  .tiny-tree__empty-block {
+    .tiny-tree__empty-text {
+      color: var(--te-common-text-weaken);
     }
   }
 }
@@ -533,6 +538,7 @@
   background-color: var(--te-common-bg-default);
   box-shadow: 0 2px 12px 0 var(--te-base-rgba-24);
   .tiny-notify__icon-zone {
+    height: 24px;
     .tiny-notify__icon-status {
       width: 16px;
       height: 16px;
@@ -548,6 +554,8 @@
   .tiny-notify__message-zone {
     margin: 0 0 0 8px;
     .tiny-notify__title-wrapper {
+      margin-bottom: 0;
+      line-height: 24px;
       font-size: var(--te-base-font-size-1);
       font-weight: var(--te-base-font-weight-4);
       color: var(--te-common-text-primary);
@@ -555,9 +563,11 @@
   }
   .tiny-notify__close-zone {
     padding: 0;
-    &.tiny-notify__icon-close {
+    .tiny-notify__icon-close {
       width: 16px;
       height: 16px;
+      top: 0;
+      right: 0;
     }
   }
   &.tiny-notify--error {
@@ -588,18 +598,17 @@
 // 17、tooltip文字提示
 .tiny-tooltip.tiny-tooltip {
   &.tiny-tooltip__popper {
-    box-shadow: 0 0 20px 0 var(--te-base-rgba-23);
     background: var(--te-common-bg-default);
     color: var(--te-common-text-primary);
+    box-shadow: 0 0 20px 0 var(--te-base-dark-bg-8);
     &[class*='is-'] {
       background: var(--te-common-bg-default);
       color: var(--te-common-text-primary);
       font-size: var(--te-base-font-size-base);
       padding: 12px;
-      border: 1px solid var(--te-common-border-default);
       &[x-placement^='top'] {
         .popper__arrow {
-          border-top-color: var(--te-common-border-default);
+          border-top-color: var(--te-common-text-inverse);
           &.popper__arrow::after {
             border-top-color: var(--te-common-text-inverse);
           }
@@ -607,7 +616,7 @@
       }
       &[x-placement^='bottom'] {
         .popper__arrow {
-          border-bottom-color: var(--te-common-border-default);
+          border-bottom-color: var(--te-common-text-inverse);
           &.popper__arrow::after {
             border-bottom-color: var(--te-common-text-inverse);
           }
