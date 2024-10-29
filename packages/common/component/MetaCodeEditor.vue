@@ -7,6 +7,8 @@
       </div>
       <tiny-button v-else class="edit-btn" @click="open">
         <slot name="icon"></slot>
+        <svg-icon name="page-schema" v-if="buttonText === '编辑代码'" class="edit-btn-icon"></svg-icon>
+
         {{ buttonLabel }}
       </tiny-button>
     </slot>
@@ -266,6 +268,12 @@ export default {
     }
     &:focus {
       border-color: var(--te-common-border-active);
+    }
+    .edit-btn-icon {
+      font-size: 14px;
+      margin-right: 4px;
+      vertical-align: text-top;
+      color: var(--te-common-icon-secondary);
     }
   }
 }
