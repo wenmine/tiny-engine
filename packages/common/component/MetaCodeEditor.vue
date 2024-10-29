@@ -7,7 +7,7 @@
       </div>
       <tiny-button v-else class="edit-btn" @click="open">
         <slot name="icon"></slot>
-        <svg-icon name="page-schema" v-if="buttonText === '编辑代码'" class="edit-btn-icon"></svg-icon>
+        <svg-icon name="page-schema" v-if="buttonText === EDIT_CODE_TEXT" class="edit-btn-icon"></svg-icon>
 
         {{ buttonLabel }}
       </tiny-button>
@@ -145,6 +145,8 @@ export default {
     const editorTipsTitle = computed(() => props.tips?.title?.[locale.value] ?? props.tips?.title)
     const editorTipsDemo = computed(() => props.tips?.demo?.[locale.value] ?? props.tips?.demo)
 
+    const EDIT_CODE_TEXT = '编辑代码'
+
     watchEffect(() => {
       const { modelValue, dataType } = props
       const val = dataType ? modelValue?.value || '' : modelValue
@@ -241,6 +243,7 @@ export default {
       editor,
       editorState,
       value,
+      EDIT_CODE_TEXT,
       options: {
         language: props.language,
         minimap: {

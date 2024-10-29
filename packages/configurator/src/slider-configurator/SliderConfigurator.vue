@@ -136,7 +136,8 @@ export default {
     background-color: transparent;
     position: relative;
     outline: 0;
-    -webkit-appearance: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
   }
   input[type='range']::-webkit-slider-thumb {
@@ -151,7 +152,9 @@ export default {
     cursor: pointer;
     background-clip: padding-box;
     box-sizing: border-box;
-    -webkit-appearance: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   input[type='range']::-webkit-slider-thumb:active {
     border: 0;
