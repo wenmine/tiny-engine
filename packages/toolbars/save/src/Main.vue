@@ -200,8 +200,36 @@ export default {
 }
 
 .save-style {
-  padding: 14px;
+  padding: 20px 12px;
   font-size: 12px;
+
+  .save-setting {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .save-time {
+    line-height: 24px;
+    font-size: 12px;
+    margin: 12px 0 16px 0;
+    display: flex;
+    .save-time-label {
+      width: 60px;
+    }
+
+    .tiny-select {
+      width: 103px;
+      margin-left: 12px;
+
+      :deep(.tiny-input__suffix) {
+        width: 12px;
+        top: 12px;
+      }
+    }
+  }
 
   .save-button-group {
     text-align: right;
@@ -211,27 +239,8 @@ export default {
       padding: 0 8px;
       height: 26px;
       line-height: 24px;
+      border: 0;
       border-radius: 4px;
-    }
-  }
-}
-
-.save-time {
-  line-height: 24px;
-  font-size: 12px;
-  margin: 13px 0 14px 0;
-  display: flex;
-  .save-time-label {
-    width: 60px;
-  }
-
-  .tiny-select {
-    width: 103px;
-    margin-left: 12px;
-
-    :deep(.tiny-input__suffix) {
-      width: 12px;
-      top: 12px;
     }
   }
 }

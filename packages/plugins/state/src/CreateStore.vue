@@ -254,11 +254,14 @@ export default {
   overflow-y: auto;
   :deep(.tiny-collapse-item__wrap) {
     padding: 0 12px;
+    .tiny-collapse-item__content {
+      padding: 0;
+    }
   }
   :deep(.toolbar) {
     position: absolute;
     z-index: 99;
-    right: 4px;
+    right: 20px;
   }
   .stores {
     padding: 12px;
