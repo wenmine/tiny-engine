@@ -499,7 +499,7 @@ export default {
     line-height: 10px;
     letter-spacing: -0.2px;
     display: flex;
-    color: var(--te-base-text-color);
+    color: var(--te-common-text-primary);
     background: transparent;
     padding: 2px 4px;
     margin-left: -2px;

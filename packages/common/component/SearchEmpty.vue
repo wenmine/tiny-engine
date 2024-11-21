@@ -30,7 +30,7 @@ export default {
   }
   .empty-text {
     font-size: 12px;
-    color: var(--te-base-text-color-3);
+    color: var(--te-common-text-weaken);
   }
 }
 </style>
