@@ -97,7 +97,6 @@ export default {
 
 <style lang="less">
 :root {
-  --ti-lowcode-common-primary-color: #5e7ce0;
   --ti-lowcode-common-text-title-color: #252b3a;
   --ti-lowcode-common-secondary-text-color: #adb0b8;
   --ti-lowcode-common-text-main-color: #575d6c;
@@ -189,7 +188,7 @@ td {
   .source-code {
     --ti-lowcode-toolbar-bg: var(--ti-lowcode-mask-bg);
     .tiny-button {
-      --ti-button-info-normal-bg-color: var(--ti-lowcode-common-primary-color);
+      --ti-button-info-normal-bg-color: var(--te-common-color-info);
     }
   }
 }

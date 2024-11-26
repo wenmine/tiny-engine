@@ -288,7 +288,7 @@ export default {
     }
     .add-item {
       cursor: pointer;
-      color: var(--ti-lowcode-common-primary-color);
+      color: var(--te-common-text-emphasize);
       margin-top: 8px;
       .icon {
         margin-right: 4px;
@@ -310,7 +310,7 @@ export default {
       .item-label {
         width: 38%;
         word-break: break-all;
-        color: var(--ti-lowcode-toolbar-breadcrumb-color);
+        color: var(--te-common-text-secondary);
       }
       .component-wrap {
         flex: 1;
@@ -382,7 +382,7 @@ export default {
         border-color: transparent;
         padding: 6px 10px;
         &:hover {
-          background-color: var(--ti-lowcode-common-primary-color);
+          background-color: var(--te-common-bg-primary-checked);
         }
       }
     }

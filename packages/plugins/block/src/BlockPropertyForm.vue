@@ -270,7 +270,7 @@ export default {
   display: inline-block;
   margin-top: 6px;
   font-size: 12px;
-  color: var(--ti-lowcode-common-primary-color);
+  color: var(--te-common-text-checked);
   cursor: pointer;
 
   .text {
@@ -296,7 +296,7 @@ export default {
   width: 280px;
   height: 100%;
   padding: 20px;
-  background-color: var(--ti-lowcode-common-component-bg);
+  background-color: var(--te-common-bg-default);
   border-right: 1px solid var(--ti-lowcode-toolbar-border-color);
 }
 

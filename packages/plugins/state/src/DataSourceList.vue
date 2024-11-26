@@ -131,7 +131,7 @@ export default {
         justify-content: flex-end;
         width: 30%;
         .svg-button {
-          color: var(--ti-lowcode-toolbar-breadcrumb-color);
+          color: var(--te-common-text-secondary);
           font-size: 14px;
           cursor: pointer;
 
@@ -203,7 +203,7 @@ export default {
     p span {
       &:first-child {
         font-size: 14;
-        color: var(--ti-lowcode-toolbar-breadcrumb-color);
+        color: var(--te-common-text-secondary);
       }
 
       &:last-child {

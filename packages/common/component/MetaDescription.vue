@@ -92,7 +92,7 @@ export default {
   padding-block: 4px;
   padding-inline: 11px 8px;
   width: auto;
-  color: var(--ti-lowcode-toolbar-breadcrumb-color);
+  color: var(--te-common-text-secondary);
   background-color: var(--ti-lowcode-toolbar-view-hover-bg);
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);
   &.warning {
@@ -108,13 +108,13 @@ export default {
     border-bottom: 1px solid var(--ti-lowcode-collapse-active-border-color);
   }
   .content {
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
   }
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
     .footer-text {
       cursor: pointer;
       &.link {

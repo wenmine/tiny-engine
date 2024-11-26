@@ -259,12 +259,12 @@ export default {
     }
 
     .tiny-collapse-item__header {
-      color: var(--ti-lowcode-toolbar-breadcrumb-color);
-      background-color: var(--ti-lowcode-tabs-bg);
+      color: var(--te-common-text-secondary);
+      background-color: var(--te-common-bg-prompt);
       font-weight: 600;
 
       svg {
-        color: var(--ti-lowcode-toolbar-breadcrumb-color);
+        color: var(--te-common-text-secondary);
         margin-right: 4px;
       }
     }
@@ -276,7 +276,7 @@ export default {
       background: var(--ti-lowcode-tabs-active-bg);
       border-top: none;
       border-bottom: 1px solid var(--ti-lowcode-tabs-border-color);
-      color: var(--ti-lowcode-toolbar-breadcrumb-color);
+      color: var(--te-common-text-secondary);
 
       .properties-item {
         padding: 3px 10px;
@@ -293,7 +293,7 @@ export default {
         .item-input {
           .meta-array-wrap {
             .top {
-              color: var(--ti-lowcode-toolbar-breadcrumb-color);
+              color: var(--te-common-text-secondary);
             }
             .actions {
               display: none;
@@ -303,7 +303,7 @@ export default {
       }
       .item-container {
         .empty {
-          color: var(--ti-lowcode-common-secondary-text-color);
+          color: var(--te-common-text-secondary);
         }
       }
     }

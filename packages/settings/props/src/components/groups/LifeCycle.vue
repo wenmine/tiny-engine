@@ -211,7 +211,7 @@ export default {
   li {
     padding: 4px 12px;
     &:hover {
-      background: var(--ti-lowcode-canvas-wrap-bg);
+      background: var(--te-common-bg-container);
       cursor: pointer;
     }
   }
@@ -225,10 +225,10 @@ export default {
     justify-content: space-between;
     padding: 8px 12px;
     cursor: pointer;
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
 
     svg {
-      color: var(--ti-lowcode-toolbar-breadcrumb-color);
+      color: var(--te-common-text-secondary);
     }
     .icon {
       margin-right: 8px;
@@ -239,7 +239,7 @@ export default {
     }
 
     &:hover {
-      background: var(--ti-lowcode-canvas-wrap-bg);
+      background: var(--te-common-bg-container);
     }
   }
 }
@@ -278,7 +278,7 @@ export default {
 
       &:hover {
         color: var(--ti-lowcode-toolbar-icon-color);
-        background: var(--ti-lowcode-canvas-wrap-bg);
+        background: var(--te-common-bg-container);
         .life-cycle-selected {
           opacity: 1;
         }

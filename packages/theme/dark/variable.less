@@ -4,15 +4,9 @@
   --base-min-width: 1280px;
 
   // ------ 主要的公共主题色，前缀为 --ti-lowcode-common -------
-  --ti-lowcode-common-primary-color: #4f77ff;
   --ti-lowcode-common-primary-hover-color: #3961eb;
-  --ti-lowcode-common-primary-color-1: #cad6ff;
-  --ti-lowcode-common-component-bg: #2f2f2f;
   --ti-lowcode-common-component-hover-bg: #3c3c3c;
   --ti-lowcode-common-layout-bg: #191818;
-  --ti-lowcode-common-layout-hover-bg: #191919;
-  --ti-lowcode-common-header-bg: #202020;
-  --ti-lowcode-common-bg-1: #404040;
   --ti-lowcode-common-bg-2: #4d4d4d;
   --ti-lowcode-common-bg-3: #2b2b2b;
   --ti-lowcode-common-bg-4: #262626;
@@ -23,14 +17,12 @@
   --ti-lowcode-common-bg-9: #292929;
   --ti-lowcode-common-hover-bg-1: rgba(255, 255, 255, 0.1);
   --ti-lowcode-common-transparent-color: transparent;
-  --ti-lowcode-common-primary-text-color: #fff;
   --ti-lowcode-common-secondary-text-color: #adb0b8;
   --ti-lowcode-common-text-title-color: #252b3a;
   --ti-lowcode-common-text-color-1: #6a6a6a;
   --ti-lowcode-common-text-color-2: #d9d9d9;
   --ti-lowcode-common-text-color-3: #fff;
   --ti-lowcode-common-text-color-4: #50d4ab;
-  --ti-lowcode-common-text-color-5: #8a8e99;
   --ti-lowcode-common-text-color-6: #575d6c;
   --ti-lowcode-common-third-text-color: #ababab;
   --ti-lowcode-common-danger-color: #c7000b;
@@ -53,8 +45,8 @@
   }
 
   .tiny-grid {
-    --ti-grid-light-color: var(--ti-lowcode-common-component-bg);
-    --ti-grid-text-color: var(--ti-lowcode-common-text-color-5);
+    --ti-grid-light-color: var(--te-common-bg-default);
+    --ti-grid-text-color: var(--te-common-text-weaken);
   }
 
   --ti-lowcode-trigger-color: #adb0b8;
@@ -63,40 +55,38 @@
   --ti-lowcode-input-error-bg: rgba(246, 111, 106, 0.1);
 
   // ------ 公共组件的主题色，前缀为 --ti-lowcode-component-组件名 ------
-  // tinysearch  背景色
-  --ti-lowcode-component-search-bg: var(--ti-lowcode-input-bg);
   // tinysearch  边框色
   --ti-lowcode-component-input-border-color: transparent;
   // svgButton
   --ti-lowcode-component-svg-button-color: var(--ti-lowcode-common-text-color-2);
-  --ti-lowcode-component-svg-button-hover-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-component-svg-button-hover-color: var(--te-common-text-checked); // 暗色和亮色不同，需注意
   --ti-lowcode-component-svg-button-hover-bg-color: var(--te-common-bg-prompt);
-  --ti-lowcode-component-svg-button-active-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-component-svg-button-active-color: var(--te-common-text-checked);
   --ti-lowcode-component-svg-button-active-bg-color: var(--te-common-bg-prompt);
 
-  --ti-lowcode-tabs-active-border-bottom-color: var(--ti-lowcode-common-primary-color);
-  --ti-lowcode-tabs-active-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-tabs-active-border-bottom-color: var(--te-common-border-checked);
+  --ti-lowcode-tabs-active-color: var(--te-common-text-checked);
 
   --ti-lowcode-form-error-tips-color: var(--ti-lowcode-common-error-color);
   // 关闭按钮
   --ti-lowcode-component-close-icon-text-color: var(--ti-lowcode-common-third-text-color); // 关闭按钮默认颜色
   // 关闭按钮 hover 颜色
-  --ti-lowcode-component-close-icon-text-hover-color: var(--ti-lowcode-common-primary-text-color);
+  --ti-lowcode-component-close-icon-text-hover-color: var(--te-common-text-primary);
 
   // 设置面板
-  --ti-lowcode-component-setting-panel-label-color: var(--ti-lowcode-common-secondary-text-color);
-  --ti-lowcode-component-setting-panel-icon-color: var(--ti-lowcode-toolbar-breadcrumb-color);
+  --ti-lowcode-component-setting-panel-label-color: var(--te-common-text-secondary);
+  --ti-lowcode-component-setting-panel-icon-color: var(--te-common-text-secondary);
   --ti-lowcode-component-setting-panel-label-tips-bg: #f2f5fc;
 
   // 插件面板
   --ti-lowcode-plugin-panel-title-color: var(--ti-lowcode-dialog-font-color); // 插件面板标题色
-  --ti-lowcode-plugin-panel-bg: var(--ti-lowcode-common-component-bg); // 插件面板背景色
+  --ti-lowcode-plugin-panel-bg: var(--te-common-bg-default); // 插件面板背景色
   --ti-lowcode-plugin-panel-border-right-color: var(--ti-lowcode-canvas-border-color); // 插件面板右侧边框色
   --ti-lowcode-plugin-panel-header-border-bottom-color: #262626; // 插件面板头部区域底部边框线颜色
   --ti-lowcode-plugin-panel-title-font-weight: 400; // 插件面板标题加粗效果
 
   // 插件设置面板
-  --ti-lowcode-plugin-setting-panel-bg: var(--ti-lowcode-common-component-bg); // 插件设置面板背景色
+  --ti-lowcode-plugin-setting-panel-bg: var(--te-common-bg-default); // 插件设置面板背景色
 
   // ------ 各个模块的主题色，前缀为 --ti-lowcode-模块名 -------
 
@@ -110,12 +100,12 @@
 
   // 页面管理
   --ti-lowcode-page-tree-color: var(--ti-lowcode-common-secondary-text-color);
-  --ti-lowcode-page-tree-hover-color: var(--ti-lowcode-common-primary-text-color);
+  --ti-lowcode-page-tree-hover-color: var(--te-common-text-primary);
 
   // 画布 canvas
-  --ti-lowcode-canvas-iframe-scrollbar-track-color: var(--ti-lowcode-canvas-wrap-bg); // iframe 内部滚动条 track 颜色
+  --ti-lowcode-canvas-iframe-scrollbar-track-color: var(--te-common-bg-container); // iframe 内部滚动条 track 颜色
   // iframe 内部滚动条 滑块 颜色
-  --ti-lowcode-canvas-iframe-scrollbar-thumb-color: var(--ti-lowcode-common-component-bg);
+  --ti-lowcode-canvas-iframe-scrollbar-thumb-color: var(--te-common-bg-default);
 
   // 数据源
   --ti-lowcode-datasource-list-color: var(--ti-lowcode-toolbar-more-hover-color);
@@ -125,7 +115,7 @@
   // 状态管理面板头部的底部边框色
   --ti-lowcode-data-header-border-bottom-color: var(--ti-lowcode-common-bg-4);
   // 状态管理示例背景色
-  --ti-lowcode-data-example-bg-color: var(--ti-lowcode-common-primary-text-color);
+  --ti-lowcode-data-example-bg-color: var(--te-common-text-primary);
   // 状态管理示例文字色
   --ti-lowcode-data-example-color: var(--ti-lowcode-common-text-title-color);
   // 添加高级属性文字颜色
@@ -134,12 +124,12 @@
   --ti-lowcode-data-advanced-text-hover-color: #8a8e99;
 
   // 状态管理按激活背景色
-  --ti-lowcode-data-radio-group-active-bg: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-data-radio-group-active-bg: var(--te-common-bg-primary-checked);
   // 状态管理按默认背景色
-  --ti-lowcode-data-radio-group-bg: var(--ti-lowcode-common-header-bg);
+  --ti-lowcode-data-radio-group-bg: var(--te-common-bg-default);
 
   // 教程
-  --ti-lowcode-tutorial-list-item-color: var(--ti-lowcode-toolbar-breadcrumb-color);
+  --ti-lowcode-tutorial-list-item-color: var(--te-common-text-secondary);
 
   // 头部工具栏背景色
   --ti-lowcode-toolbar-bg: #404040;
@@ -157,34 +147,28 @@
   --ti-lowcode-toolbar-more-color: rgba(217, 217, 217, 0.4);
   // 头部工具栏更多more图标hover颜色
   --ti-lowcode-toolbar-more-hover-color: rgba(217, 217, 217, 0.8);
-  // 头部工具栏面包屑字体颜色 && 右侧属性面板tabs字体颜色 && 右侧属性面板 collapse 头部字体颜色 && switch 选中圆背景色
-  --ti-lowcode-toolbar-breadcrumb-color: #d9d9d9;
   // 头部工具栏画布大小文本hover背景色 && 头部弹框背景色 && context-menu 背景色 && 大纲树节点hover背景色 && 日期组件背景色
   --ti-lowcode-toolbar-view-hover-bg: #4d4d4d;
   // 头部工具栏i18n国际化字体颜色
   --ti-lowcode-toolbar-i18n-color: rgba(255, 255, 255, 0.4);
   // 应用发布弹窗图标颜色
-  --ti-lowcode-toolbar-publish-icon-color: var(--ti-lowcode-common-primary-text-color);
+  --ti-lowcode-toolbar-publish-icon-color: var(--te-common-text-primary);
   // 头部左侧logo颜色
   --ti-lowcode-logo-color: #8a8e99;
   // 头部左侧logo颜色
   --ti-lowcode-logo-active-color: rgba(255, 255, 255, 0.5);
   // 中间画布边框色
   --ti-lowcode-canvas-border-color: #1a1a1a;
-  // 右侧属性面板tab页签背景色 && 表单校验错误输入框背景色
-  --ti-lowcode-tabs-bg: #2b2b2b;
   // 右侧属性面板tab页签边框色 && 弹框边框色 && context-menu 边框色
   --ti-lowcode-tabs-border-color: #313131;
   // 右侧属性面板tab页签激活状态背景色 && 弹框title背景颜色
   --ti-lowcode-tabs-active-bg: #404040;
   // 右侧属性面板折叠面板展开内容边框色
   --ti-lowcode-collapse-active-border-color: #333;
-  // 中间画布外框容器背景色 && 弹框底部tip背景色 && select 多选下拉选项hover背景色
-  --ti-lowcode-canvas-wrap-bg: #5e5e5e;
   // 中间画布拖拽宽度按钮背景色
   --ti-lowcode-canvas-handle-bg: #2b2b2b;
   // 中间画布拖拽宽度按钮背景色
-  --ti-lowcode-canvas-handle-hover-bg: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-canvas-handle-hover-bg: var(--te-common-bg-primary-checked);
   // 中间画布底部面包屑背景色 && popover 背景颜色
   --ti-lowcode-breadcrumb-bg: #ebebeb;
   // 中间画布底部面包屑字体颜色 && popover 字体颜色
@@ -206,15 +190,13 @@
 
   // collapse 折叠面板激活后字体颜色
   --ti-lowcode-collapse-active-color: #ebebeb;
-  // input 框背景色
-  --ti-lowcode-input-bg: #262626;
   // switch 圆点 hover 背景色
   --ti-lowcode-switch-after-hover-bg: #6b6b6b;
   // switch 圆点 checked 背景色
   --ti-lowcode-switch-after-checked-bg: #d9d9d9;
   // -----下拉框相关主题配置-----
   // 下拉框聚焦时边框颜色
-  --ti-lowcode-select-focus-border-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-select-focus-border-color: var(--te-common-border-checked);
   // 下拉框选中标签字体颜色
   --ti-lowcode-select-tags-text-color: #d9d9d9;
   // 下拉框选中标签背景颜色
@@ -254,7 +236,7 @@
   // more icon 选中背景色
   --ti-lowcode-more-icon-selected-bg: #2e2e2e;
   // main menu 背景色
-  --ti-lowcode-main-menu-bg: var(--ti-lowcode-common-component-bg);
+  --ti-lowcode-main-menu-bg: var(--te-common-bg-default);
   --ti-lowcode-main-menu-item-hover-bg: var(--ti-lowcode-common-component-hover-bg);
   --ti-lowcode-main-menu-item-hover-color: var(--ti-lowcode-toolbar-icon-color);
   // spacing svg 图标上下颜色
@@ -319,11 +301,11 @@
   // 说明提示框错误颜色
   --ti-lowcode-description-error-color: #ff0000;
   // switch checked状态边框色
-  --ti-lowcode-switch-checked-border-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-switch-checked-border-color: var(--te-common-border-checked);
   // 文本链接颜色
   --ti-lowcode-text-link-color: #6bb0ff;
   // 大纲树node节点选中背景色
-  --ti-lowcode-node-current-bg: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-node-current-bg: var(--te-common-bg-primary-checked);
   // 大纲树node节点不可拖拽背景色 && 表单校验错误边框色
   --ti-lowcode-node-nodrag-bg: #ea384c;
   // 成功状态按钮边框色
@@ -346,7 +328,7 @@
   // 删除按钮hover背景色 && 表单校验错误背景色
   --ti-lowcode-delete-button-hover-bg: #c92c3f;
   // input框focus 获焦时边框颜色
-  --ti-lowcode-input-focus-border-color: var(--ti-lowcode-common-primary-color);
+  --ti-lowcode-input-focus-border-color: var(--te-common-border-checked);
   // 次要描述字体颜色 && 面包屑label 字体颜色
   --ti-lowcode-description-minor-color: #ababab;
   // 样式设置 label 字体颜色

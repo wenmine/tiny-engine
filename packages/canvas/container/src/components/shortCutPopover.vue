@@ -96,7 +96,7 @@ export default {
 
   .icon-setting {
     font-size: 16px;
-    fill: var(--ti-lowcode-toolbar-breadcrumb-color, #d9d9d9);
+    fill: var(--te-common-text-secondary, #d9d9d9);
   }
 
   .icon-wrap {
@@ -171,7 +171,7 @@ export default {
     align-items: center;
   }
   svg {
-    fill: var(--ti-lowcode-toolbar-breadcrumb-color, #d9d9d9);
+    fill: var(--te-common-text-secondary, #d9d9d9);
     margin-left: 4px;
   }
 }

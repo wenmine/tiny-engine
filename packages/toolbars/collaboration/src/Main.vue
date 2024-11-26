@@ -120,7 +120,7 @@ export default {
     width: 100%;
     font-size: 14px;
     padding: 12px 20px;
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
     line-height: 18px;
     font-weight: 600;
   }

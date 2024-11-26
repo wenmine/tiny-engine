@@ -505,7 +505,7 @@ export default {
       margin-top: 13px;
     }
     :deep(.path) {
-      stroke: var(--ti-lowcode-toolbar-breadcrumb-color);
+      stroke: var(--te-common-text-secondary);
     }
   }
   .download-btn {

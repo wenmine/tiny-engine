@@ -206,14 +206,14 @@ export default {
     font-size: 12px;
     display: flex;
     justify-content: space-between;
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
     padding: 6px 15px;
     &:not(:last-child) {
       border-bottom: 1px solid var(--ti-lowcode-tabs-border-color);
     }
     &:hover {
       color: var(--ti-lowcode-toolbar-icon-color);
-      background: var(--ti-lowcode-canvas-wrap-bg);
+      background: var(--te-common-bg-container);
     }
 
     .link-item {

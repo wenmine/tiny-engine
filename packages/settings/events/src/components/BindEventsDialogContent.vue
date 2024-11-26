@@ -127,7 +127,7 @@ export default {
         width: 100%;
         height: 216px;
         padding: 12px 8px;
-        color: var(--ti-lowcode-toolbar-breadcrumb-color);
+        color: var(--te-common-text-secondary);
       }
       .mark {
         width: 100%;

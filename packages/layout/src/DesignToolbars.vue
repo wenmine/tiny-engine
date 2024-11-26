@@ -147,7 +147,7 @@ export default {
         background: var(--ti-lowcode-toolbar-view-active-bg);
       }
       &.active {
-        color: var(--ti-lowcode-common-primary-color);
+        color: var(--te-common-text-checked);
       }
       &.disabled {
         cursor: not-allowed;

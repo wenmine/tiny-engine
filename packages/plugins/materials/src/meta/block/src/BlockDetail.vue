@@ -131,7 +131,7 @@ export default {
       width: 20px;
       height: 20px;
       color: var(--ti-lowcode-toolbar-title-color);
-      background: var(--ti-lowcode-canvas-wrap-bg);
+      background: var(--te-common-bg-container);
       border: 1px solid var(--ti-lowcode-toolbar-border-color);
       font-size: 12px;
       cursor: pointer;

@@ -209,8 +209,8 @@ export default {
     }
     .tiny-form-item__content {
       .editor-warp {
-        --ti-lowcode-meta-codeEditor-border-color: var(--ti-lowcode-common-secondary-text-color);
-        --ti-lowcode-meta-codeEditor-color: var(--ti-lowcode-common-secondary-text-color);
+        --ti-lowcode-meta-codeEditor-border-color: var(--te-common-text-secondary);
+        --ti-lowcode-meta-codeEditor-color: var(--te-common-text-secondary);
       }
     }
   }

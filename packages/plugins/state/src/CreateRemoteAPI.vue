@@ -242,11 +242,11 @@ export default {
     background: var(--ti-lowcode-toolbar-bg);
     border-top: 1px solid var(--ti-lowcode-toolbar-border-color);
     border-bottom: 1px solid var(--ti-lowcode-toolbar-border-color);
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
   }
 
   .use-service {
-    color: var(--ti-lowcode-toolbar-breadcrumb-color);
+    color: var(--te-common-text-secondary);
     font-size: 12px;
     margin-top: 10px;
 
@@ -297,7 +297,7 @@ export default {
     .icon {
       width: 20px;
       height: 20px;
-      color: var(--ti-lowcode-toolbar-breadcrumb-color);
+      color: var(--te-common-text-secondary);
       font-size: 16px;
       border-radius: 2px;
       margin-right: 8px;

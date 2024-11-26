@@ -191,8 +191,8 @@ export default {
           flex: 1;
           padding: 4px 0;
           font-size: 16px;
-          color: var(--ti-lowcode-toolbar-breadcrumb-color);
-          background: var(--ti-lowcode-canvas-wrap-bg);
+          color: var(--te-common-text-secondary);
+          background: var(--te-common-bg-container);
           position: relative;
           display: flex;
           justify-content: center;
@@ -229,7 +229,7 @@ export default {
 
       svg {
         font-size: 14px;
-        color: var(--ti-lowcode-toolbar-breadcrumb-color);
+        color: var(--te-common-text-secondary);
       }
     }
   }
