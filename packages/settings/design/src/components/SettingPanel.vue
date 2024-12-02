@@ -257,7 +257,7 @@ export default {
       font-size: 12px;
       flex-shrink: 0;
       margin-right: 10px;
-      color: var(--ti-lowcode-common-text-main-color);
+      color: var(--te-common-text-secondary);
     }
   }
 

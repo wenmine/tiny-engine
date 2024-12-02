@@ -500,24 +500,3 @@ export default {
   }
 }
 </style>
-
-<style lang="less">
-.tiny-popover.tiny-popper.state-data-example-tips {
-  background-color: var(--ti-lowcode-data-example-bg-color);
-  color: var(--ti-lowcode-data-example-color);
-
-  &[x-placement^='bottom'] .popper__arrow {
-    &,
-    &::after {
-      border-bottom-color: var(--ti-lowcode-data-example-bg-color);
-    }
-  }
-
-  &[x-placement^='top'] .popper__arrow {
-    &,
-    &::after {
-      border-top-color: var(--ti-lowcode-data-example-bg-color);
-    }
-  }
-}
-</style>

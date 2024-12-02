@@ -246,7 +246,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         h6 {
-          color: var(--ti-lowcode-common-text-title-color);
+          color: var(--te-common-text-primary);
         }
         .option-icon {
           display: inline-block;

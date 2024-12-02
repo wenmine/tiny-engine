@@ -97,9 +97,7 @@ export default {
 
 <style lang="less">
 :root {
-  --ti-lowcode-common-text-title-color: #252b3a;
   --ti-lowcode-common-secondary-text-color: #adb0b8;
-  --ti-lowcode-common-text-main-color: #575d6c;
   --ti-lowcode-design-plugin-color: #8a8e99;
   --ti-lowcode-common-border-color: #dfe1e6;
   --ti-lowcode-common-hover-bg-color: #f2f5fc;

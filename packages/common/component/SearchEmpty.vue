@@ -26,7 +26,6 @@ export default {
   .empty-icon {
     width: 80px;
     height: 80px;
-    color: var(--ti-lowcode-datasource-common-empty-color);
   }
   .empty-text {
     font-size: 12px;

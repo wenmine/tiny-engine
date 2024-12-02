@@ -159,7 +159,7 @@ export default {
         svg {
           font-size: 40px;
           vertical-align: middle;
-          color: var(--ti-lowcode-component-icon-color);
+          color: var(--te-common-icon-secondary);
           overflow: hidden;
         }
       }

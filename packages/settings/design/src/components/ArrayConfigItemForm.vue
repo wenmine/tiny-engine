@@ -197,7 +197,7 @@ export default {
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: var(--ti-lowcode-common-text-title-color);
+  color: var(--te-common-text-primary);
   .config-title {
     margin-left: 6px;
   }
@@ -205,7 +205,7 @@ export default {
 .config-item-form {
   :deep(.tiny-form-item) {
     .tiny-form-item__label {
-      color: var(--ti-lowcode-common-text-main-color);
+      color: var(--te-common-text-secondary);
     }
     .tiny-form-item__content {
       .editor-warp {
