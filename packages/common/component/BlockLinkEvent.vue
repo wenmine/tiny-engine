@@ -198,7 +198,7 @@ export default {
   padding: 3px 0;
   border: 1px solid var(--ti-lowcode-tabs-border-color);
   border-radius: 3px;
-  background-color: var(--ti-lowcode-toolbar-view-hover-bg);
+  background-color: var(--te-common-bg-container);
   box-shadow: 0 1px 15px 0 rgb(0 0 0 / 20%);
   display: flex;
   flex-direction: column;

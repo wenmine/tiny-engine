@@ -319,7 +319,7 @@ export default {
   }
 
   :deep(.splitpanes__splitter) {
-    background: var(--ti-lowcode-toolbar-view-hover-bg);
+    background: var(--te-common-bg-container);
     border-left: var(--ti-lowcode-tabs-border-color);
   }
 

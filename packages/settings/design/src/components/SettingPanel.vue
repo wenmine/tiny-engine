@@ -263,24 +263,24 @@ export default {
 
   h5 {
     font-size: 13px;
-    color: var(--ti-lowcode-title-color);
+    color: var(--te-common-text-primary);
     margin: 20px 0;
   }
   .array-config-item {
     width: 100%;
     :deep(.list-group) {
       .option-item {
-        border-top: 1px solid var(--ti-lowcode-common-border-color);
+        border-top: 1px solid var(--te-common-border-default);
       }
       .option-item:last-child {
-        border-bottom: 1px solid var(--ti-lowcode-common-border-color);
+        border-bottom: 1px solid var(--te-common-border-default);
       }
       .item-icon {
-        color: var(--ti-lowcode-design-plugin-color);
+        color: var(--ti-lowcode-design-plugin-icon-color);
         fill: currentColor;
       }
       .item-text {
-        color: var(--ti-lowcode-title-color);
+        color: var(--te-common-text-primary);
       }
     }
     .operate-tips-item + .operate-tips-item {

@@ -210,7 +210,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--ti-lowcode-common-layout-bg);
+  background: var(--te-common-bg-default);
   box-sizing: border-box;
   z-index: 1000;
   border-right: 1px solid var(--ti-lowcode-plugin-panel-border-right-color);

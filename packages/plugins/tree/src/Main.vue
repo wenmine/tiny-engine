@@ -348,13 +348,13 @@ export default {
   :deep(.tiny-grid .tiny-grid__body-wrapper .tiny-grid-body__row) {
     background-color: var(--te-common-bg-default);
     &:hover {
-      background-color: var(--ti-lowcode-common-component-hover-bg);
+      background-color: var(--te-common-bg-container);
     }
   }
   :deep(.tiny-grid .tiny-grid__body-wrapper .tiny-grid-body__row:not(.row__hover):nth-child(2n)) {
     background-color: var(--te-common-bg-default);
     &:hover {
-      background-color: var(--ti-lowcode-common-component-hover-bg);
+      background-color: var(--te-common-bg-container);
     }
   }
   :deep(.tiny-grid-body__row.nav-tree .tiny-grid-cell) {

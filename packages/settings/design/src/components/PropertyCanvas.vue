@@ -250,7 +250,7 @@ export default {
         }
         .option-icon {
           display: inline-block;
-          color: var(--ti-lowcode-design-plugin-color);
+          color: var(--ti-lowcode-design-plugin-icon-color);
         }
         .option-tips + .option-tips {
           margin-left: 8px;

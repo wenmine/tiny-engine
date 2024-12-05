@@ -153,7 +153,7 @@ export default {
   .source-code-header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--ti-lowcode-toolbar-border-color);
+    border-bottom: 1px solid var(--te-common-border-default);
     margin-bottom: 12px;
   }
   .title {
@@ -192,7 +192,7 @@ export default {
   }
   .source-code-content {
     height: calc(100% - 42px);
-    border: 1px solid var(--ti-lowcode-base-gray-101);
+    border: 1px solid var(--te-common-border-divider);
     border-radius: 4px;
   }
   .code-edit-content {

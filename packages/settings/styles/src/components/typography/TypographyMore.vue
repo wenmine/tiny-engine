@@ -123,7 +123,7 @@ export default {
       .tiny-collapse-item__header {
         height: 24px;
         line-height: 24px;
-        background-color: var(--ti-lowcode-toolbar-view-hover-bg);
+        background-color: var(--te-common-bg-container);
         justify-content: center;
         transition: 0.3s;
 
@@ -141,7 +141,6 @@ export default {
 
         &:hover {
           color: var(--ti-lowcode-toolbar-icon-color);
-          background-color: var(--ti-lowcode-more-collapse-header-hover-color);
 
           svg {
             color: var(--ti-lowcode-toolbar-icon-color);

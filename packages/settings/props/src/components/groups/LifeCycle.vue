@@ -252,7 +252,7 @@ export default {
     margin-right: 12px;
 
     .life-cycle-list {
-      border: 1px solid var(--ti-lowcode-collapse-active-border-color);
+      border: 1px solid var(--te-common-border-default);
       box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
       border-radius: 4px;
       height: 320px;

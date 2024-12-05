@@ -261,11 +261,11 @@ const change = (item) => {
 
       &:hover {
         background-color: var(--te-common-bg-prompt);
-        color: var(--te-common-text-weaken);
+        color: var(--te-common-text-secondary);
         border-radius: 4px;
       }
       :deep(.tiny-dropdown__trigger:not(.tiny-dropdown__caret-button):not(.is-disabled)):hover {
-        color: var(--te-common-text-weaken);
+        color: var(--te-common-text-secondary);
       }
     }
   }

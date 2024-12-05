@@ -297,7 +297,7 @@ export default {
   height: 100%;
   padding: 20px;
   background-color: var(--te-common-bg-default);
-  border-right: 1px solid var(--ti-lowcode-toolbar-border-color);
+  border-right: 1px solid var(--te-common-border-default);
 }
 
 .config-list {

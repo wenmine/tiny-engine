@@ -142,7 +142,7 @@ export default {
       height: 60px;
       line-height: 60px;
       text-align: center;
-      border: 1px solid var(--ti-lowcode-toolbar-border-color);
+      border: 1px solid var(--te-common-border-default);
       background: var(--te-common-bg-container);
       cursor: pointer;
       box-sizing: border-box;
@@ -178,7 +178,7 @@ export default {
         line-height: 26px;
         margin-left: 3%;
         text-align: center;
-        border: 1px solid var(--ti-lowcode-toolbar-border-color);
+        border: 1px solid var(--te-common-border-default);
         background: var(--te-common-bg-container);
         cursor: pointer;
         transition: 0.3s;

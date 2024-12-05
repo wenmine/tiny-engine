@@ -443,7 +443,7 @@ export default {
   .data-source-right-panel {
     width: 492px;
     height: 100%;
-    border-right: 1px solid var(--ti-lowcode-toolbar-border-color);
+    border-right: 1px solid var(--te-common-border-default);
     background: var(--te-common-bg-default);
     position: absolute;
     left: var(--base-left-panel-width);
@@ -495,21 +495,12 @@ export default {
   :deep(.tiny-tabs__item) {
     flex: 1 1 auto;
     text-align: center;
-    color: var(--te-common-text-primary);
-    &:not(.is-active) {
-      background-color: var(--ti-lowcode-data-radio-group-bg);
-    }
   }
 
   :deep(.tiny-tabs__nav) {
     float: none;
     display: flex;
     flex-wrap: wrap;
-    .tiny-tabs__item {
-      &.is-active {
-        background-color: var(--ti-lowcode-data-radio-group-active-bg);
-      }
-    }
   }
 
   :deep(.tiny-tabs__content) {
