@@ -74,8 +74,11 @@
 <script>
 import { reactive, ref, watch } from 'vue'
 import { Popover, Tooltip } from '@opentiny/vue'
-import { useLayout, usePage, META_APP } from '@opentiny/tiny-engine-meta-register'
+import { useLayout, usePage, useModal, META_APP } from '@opentiny/tiny-engine-meta-register'
 import { PublicIcon } from '@opentiny/tiny-engine-common'
+import { constants } from '@opentiny/tiny-engine-utils'
+
+const { STORAGE_KEY_FIXED_PANELS } = constants
 
 export default {
   components: {
@@ -98,6 +101,7 @@ export default {
     const iconComponents = {}
     const pluginRef = ref(null)
     const { isTemporaryPage } = usePage()
+    const { message } = useModal()
     const pluginState = useLayout().getPluginState()
 
     props.plugins.forEach(({ id, entry, icon }) => {
@@ -154,7 +158,29 @@ export default {
       pluginState.fixedPanels = pluginState.fixedPanels?.includes(pluginName)
         ? pluginState.fixedPanels?.filter((item) => item !== pluginName)
         : [...pluginState.fixedPanels, pluginName]
+
+      try {
+        localStorage.setItem(STORAGE_KEY_FIXED_PANELS, JSON.stringify(pluginState.fixedPanels))
+      } catch (error) {
+        message({ message: `'存储固定面板数据失败:'${error}`, status: 'error' })
+      }
     }
+
+    const restoreFixedPanels = () => {
+      try {
+        const storedPanels = localStorage.getItem(STORAGE_KEY_FIXED_PANELS)
+        pluginState.fixedPanels = storedPanels ? JSON.parse(storedPanels) : []
+
+        if (!Array.isArray(pluginState.fixedPanels)) {
+          pluginState.fixedPanels = []
+        }
+      } catch (error) {
+        message({ message: `'读取固定面板数据失败:'${error}`, status: 'error' })
+        pluginState.fixedPanels = []
+      }
+    }
+
+    restoreFixedPanels()
 
     return {
       state,
