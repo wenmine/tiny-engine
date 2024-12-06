@@ -127,7 +127,7 @@ export default {
   .datasource-list {
     flex-grow: 1;
     padding-top: 12px;
-    border-top: 1px solid var(--ti-lowcode-data-source-border-color);
+    border-top: 1px solid var(--ti-lowcode-datasource-border-color);
   }
   .datasource-list-item {
     box-shadow: var(--ti-lowcode-datasource-tabs-border-color) 0, -1px;
