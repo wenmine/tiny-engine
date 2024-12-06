@@ -171,6 +171,9 @@ export default {
         height: 16px;
         margin-top: 6px;
         color: var(--ti-lowcode-datasource-toolbar-more-hover-color);
+        &:hover {
+          color: var(--ti-lowcode-toolbar-icon-color);
+        }
       }
     }
   }
