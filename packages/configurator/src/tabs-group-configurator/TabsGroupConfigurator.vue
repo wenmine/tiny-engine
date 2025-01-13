@@ -179,12 +179,18 @@ const change = (item) => {
         background-color: var(--te-common-bg-prompt);
         color: var(--te-common-text-secondary);
         border-radius: 4px;
+        .svg-icon {
+          color: var(--te-common-text-primary);
+        }
       }
 
       &.selected {
         background-color: var(--te-common-bg-prompt);
         color: var(--te-common-text-secondary);
         border-radius: 4px;
+        .svg-icon {
+          color: var(--te-common-text-primary);
+        }
       }
     }
     .tab-item {
