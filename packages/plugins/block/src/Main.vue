@@ -506,9 +506,9 @@ export default {
   left: -6px;
   right: 0;
   padding: 8px 16px;
-  background-color: var(--ti-lowcode-component-search-bg);
   border-top: 1px solid var(--te-common-border-divider);
-  color: var(--ti-lowcode-component-block-list-item-color);
+  background-color: var(--te-common-bg-default);
+  color: var(--te-common-text-primary);
   display: flex;
   justify-content: space-between;
   :deep(.tiny-dropdown) {
@@ -526,7 +526,7 @@ export default {
   }
   .footer-layout {
     font-size: 12px;
-    color: var(--ti-lowcode-component-block-list-item-color);
+    color: var(--te-common-text-primary);
     .tiny-svg {
       cursor: pointer;
       margin-left: 8px;
@@ -569,7 +569,7 @@ export default {
     .popper__arrow {
       &,
       &::after {
-        border-right-color: var(--ti-lowcode-common-component-hover-bg);
+        border-right-color: var(--te-common-bg-container);
       }
     }
   }
@@ -582,7 +582,7 @@ export default {
     font-size: 12px;
     color: var(--ti-lowcode-materials-block-group-delete-popover-title-color);
     .icon {
-      color: var(--ti-lowcode-warning-color);
+      color: var(--te-common-color-warning);
       width: 16px;
       height: 16px;
     }
