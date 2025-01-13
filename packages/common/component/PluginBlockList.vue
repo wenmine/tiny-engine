@@ -358,7 +358,7 @@ export default {
   padding: 12px;
   background: var(--ti-lowcode-component-block-list-shortcut-bg);
   border-radius: 5px;
-  border: 1px solid var(--ti-lowcode-common-border-color-4);
+  border: 1px solid var(--te-common-border-default);
   top: v-bind('state.top');
   .block-shortcut-title {
     color: var(--ti-lowcode-component-block-list-shortcut-title-color);
