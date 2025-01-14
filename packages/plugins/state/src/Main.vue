@@ -471,7 +471,7 @@ export default {
       padding: 0 12px;
       font-size: 12px;
       font-weight: 700;
-      color: var(--ti-lowcode-data-source-color);
+      color: var(--te-common-text-primary);
       background: var(--te-common-bg-default);
       border-bottom: 1px solid var(--ti-lowcode-data-header-border-bottom-color);
       .options-wrap {

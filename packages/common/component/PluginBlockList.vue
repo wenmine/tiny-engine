@@ -519,7 +519,7 @@ export default {
     }
 
     &.is-active {
-      background: var(--ti-lowcode-component-block-list-item-active-bg, --te-common-bg-container);
+      background: var(--ti-lowcode-component-block-list-item-active-bg);
     }
 
     &.is-disabled {
