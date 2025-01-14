@@ -279,11 +279,5 @@ export default {
       }
     }
   }
-
-  .tiny-tree-node__content {
-    &:hover {
-      --ti-lowcode-tree-node-content-hover-bg-color: var(--ti-lowcode-page-manage-tree-node-background-color);
-    }
-  }
 }
 </style>
