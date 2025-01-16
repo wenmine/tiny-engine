@@ -158,7 +158,7 @@ export default {
         .dots {
           width: 6px;
           height: 6px;
-          background: var(--ti-lowcode-common-error-color);
+          background: var(--te-common-color-error);
           border-radius: 50%;
           position: absolute;
           top: 9px;

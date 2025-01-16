@@ -741,7 +741,7 @@ export default {
     box-sizing: border-box;
     cursor: pointer;
     &:hover {
-      color: var(--ti-lowcode-common-primary-text-color);
+      color: var(--te-common-text-primary);
     }
     .list-item-icon {
       font-size: 14px;
