@@ -306,6 +306,7 @@ export default {
         url.searchParams.delete('pageid')
         url.searchParams.set('blockid', block.id)
         window.history.pushState({}, '', url)
+        useBlock().postLocationHistoryChanged({ blockId: block.id })
       } else {
         confirm({
           message: '当前画布内容尚未保存，是否要继续切换?',
@@ -506,9 +507,9 @@ export default {
   left: -6px;
   right: 0;
   padding: 8px 16px;
-  background-color: var(--ti-lowcode-component-search-bg);
   border-top: 1px solid var(--te-common-border-divider);
-  color: var(--ti-lowcode-component-block-list-item-color);
+  background-color: var(--te-common-bg-default);
+  color: var(--te-common-text-primary);
   display: flex;
   justify-content: space-between;
   :deep(.tiny-dropdown) {
@@ -526,7 +527,7 @@ export default {
   }
   .footer-layout {
     font-size: 12px;
-    color: var(--ti-lowcode-component-block-list-item-color);
+    color: var(--te-common-text-primary);
     .tiny-svg {
       cursor: pointer;
       margin-left: 8px;
@@ -569,7 +570,7 @@ export default {
     .popper__arrow {
       &,
       &::after {
-        border-right-color: var(--ti-lowcode-common-component-hover-bg);
+        border-right-color: var(--te-common-bg-container);
       }
     }
   }
