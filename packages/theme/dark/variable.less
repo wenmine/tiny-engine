@@ -7,9 +7,6 @@
   --ti-lowcode-common-transparent-color: transparent;
   --ti-lowcode-common-secondary-text-color: #adb0b8;
   --ti-lowcode-common-third-text-color: #ababab;
-  --ti-lowcode-common-empty-text-color: var(--te-common-text-weaken);
-  --ti-lowcode-common-danger-color: #c7000b;
-  --te-common-color-error: var(--te-common-color-error);
 
   // tiny vue 的 css 变量，覆盖掉就好
 
@@ -50,7 +47,9 @@
   --ti-lowcode-plugin-panel-title-color: var(--te-common-text-primary); // 插件面板标题色
   --ti-lowcode-plugin-panel-bg: var(--te-common-bg-default); // 插件面板背景色
   --ti-lowcode-plugin-panel-border-right-color: var(--te-common-border-divider); // 插件面板右侧边框色
-  --ti-lowcode-plugin-panel-header-border-bottom-color: #262626; // 插件面板头部区域底部边框线颜色
+  --ti-lowcode-plugin-panel-header-border-bottom-color: var(
+    --te-common-border-divider
+  ); // 插件面板头部区域底部边框线颜色
   --ti-lowcode-plugin-panel-title-font-weight: 400; // 插件面板标题加粗效果
 
   // 插件设置面板
